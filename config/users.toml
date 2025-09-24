@@ -1,0 +1,13 @@
+[[users]]
+username = "alice"
+full_name = "Alice Example"
+email = "alice@example.com"
+password_hash = "$2b$12$vcguUnRx5ALMipUaqlcdeOhBxPyiLNik2rx1.tuLgxIHpmyo8nnD6"
+scopes = ["user", "admin"]
+
+[[users]]
+username = "bob"
+full_name = "Bob Builder"
+email = "bob@example.com"
+password_hash = "$2b$12$0CeTkkjxjvCvP1rmuyvr/em8ORN8wKJmHJ7ZeqX/stREeU9AhqMC6"
+scopes = ["user"]
