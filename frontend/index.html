@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>fauth demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>fauth authentication demo</h1>
+      <section class="card">
+        <h2>Login</h2>
+        <form id="login-form">
+          <label>Username<input name="username" autocomplete="username" required /></label>
+          <label>Password<input type="password" name="password" autocomplete="current-password" required /></label>
+          <button type="submit">Login</button>
+        </form>
+        <p class="hint">Use the credentials defined in <code>config/users.toml</code>.</p>
+      </section>
+
+      <section class="card">
+        <h2>Session</h2>
+        <button id="refresh-button">Refresh access token</button>
+        <button id="logout-button" class="secondary">Logout</button>
+        <pre id="session-output" class="output"></pre>
+      </section>
+
+      <section class="card">
+        <h2>Protected API</h2>
+        <button id="secret-button">Call /api/secret</button>
+        <button id="profile-button" class="secondary">Call /api/profile</button>
+        <pre id="api-output" class="output"></pre>
+      </section>
+    </main>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

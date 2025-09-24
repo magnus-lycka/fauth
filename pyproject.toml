@@ -1,0 +1,28 @@
+[project]
+name = "fauth"
+version = "0.1.0"
+description = "Sample authentication and protected services using FastAPI"
+readme = "README.md"
+authors = [{ name = "Example", email = "example@example.com" }]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.109",
+    "uvicorn[standard]>=0.23",
+    "httpx>=0.24",
+    "passlib[bcrypt]>=1.7",
+    "pydantic-settings>=2.0",
+    "PyJWT[crypto]>=2.8",
+    "python-multipart>=0.0.6",
+    "cryptography>=41.0",
+    "boto3>=1.28",
+    "aiofiles>=23.1",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.4",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
